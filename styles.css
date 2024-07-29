@@ -47,7 +47,7 @@ body {
   left: 0;
   background: rgba(75, 75, 250, 0.3);
   border-radius: 3px;
-  padding: 10px; /* Add some padding */
+  padding: 20px; /* Increased padding for better touch targets */
   box-sizing: border-box; /* Ensure padding is included in the element’s total width and height */
 }
 
@@ -56,20 +56,27 @@ body {
   color: white;
   font-family: 'Source Code Pro', monospace;
   text-transform: uppercase;
-  font-size: 2em; /* Adjust font size for responsiveness */
+  font-size: 2rem; /* Use rem for scalable font size */
+  margin: 0; /* Remove default margin */
 }
 
 .center p {
-  font-size: 1em; /* Adjust font size for responsiveness */
+  font-size: 1rem; /* Use rem for scalable font size */
+  line-height: 1.5; /* Adjust line height for readability */
+  margin: 0; /* Remove default margin */
 }
 
 @media (max-width: 600px) {
+  .center {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
   .center h1 {
-    font-size: 1.5em; /* Smaller font size for smaller screens */
+    font-size: 1.5rem; /* Smaller font size for smaller screens */
   }
 
   .center p {
-    font-size: 0.9em; /* Smaller font size for smaller screens */
+    font-size: 0.9rem; /* Smaller font size for smaller screens */
   }
 }
 
